@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+geospatial.db
+geospatial.db-journal
+storage/uploads/*
+!storage/uploads/.gitkeep
+.pytest_cache/
+.DS_Store

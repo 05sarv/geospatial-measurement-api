@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+geospatial.db
+storage/uploads/
+!storage/uploads/.gitkeep
+.pytest_cache/
+.DS_Store

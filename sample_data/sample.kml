@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="root_doc">
+    <Schema id="sample" name="sample">
+      <SimpleField name="note" type="string"/>
+    </Schema>
+    <Schema id="sample.schema">
+      <SimpleField name="note" type="string"/>
+    </Schema>
+    <Document id="sample">
+      <name>sample</name>
+      <Placemark id="sample.1">
+        <name>square</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="note">park</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                77.59,12.97,0
+                77.6,12.97,0
+                77.6,12.98,0
+                77.59,12.98,0
+                77.59,12.97,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="sample.2">
+        <name>road</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="note">main road</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            77.59,12.97,0
+            77.61,12.99,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark id="sample.3">
+        <name>spot</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#sample.schema">
+            <SimpleData name="note">landmark</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            77.6,12.975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>
